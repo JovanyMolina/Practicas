@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.botonesInicio{
+  border-radius: 3%;
+  background-color: blanchedalmond;
+}
+
 .img1 {
     max-width: 20%;
     height: auto;
