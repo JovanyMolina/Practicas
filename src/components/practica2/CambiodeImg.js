@@ -3,7 +3,9 @@
 import { useState } from 'react'
 import React from 'react'
 
-export default function CambioImg() {
+
+
+export default function componente2() {
   const IMAGE1 = "https://www.softwareland.mx/img/softwareland-logo.svg";
 
 
@@ -26,8 +28,8 @@ export default function CambioImg() {
 
   return (
     <div>
-      <img src={imagen1} alt='logo' ></img>
-      <button onClick={cliCkimg}>Cambiar</button>
+      <img src={imagen1} alt='logo'  className="img1"></img>
+      <button onClick={cliCkimg} className='button1'>Cambiar</button>
     </div>
   )
 }

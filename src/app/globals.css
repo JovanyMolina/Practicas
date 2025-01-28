@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.img1 {
+    max-width: 20%;
+    height: auto;
+    min-width: 20%;
+}
+
+.button1 {
+    background-color: #ec4b0c;
+    color: white;
+    padding: 4px 10px;
+    margin: 8px 4px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+}
