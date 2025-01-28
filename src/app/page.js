@@ -6,6 +6,7 @@ export default function Home() {
     <div>
       <Link href='/practica1'>PRACTICA#1</Link>
       <Link href='/practica2'>PRACTICA#2</Link>
+      <Link href='/practica3'>PRACTICA#3</Link>
     </div>
   );
 }
