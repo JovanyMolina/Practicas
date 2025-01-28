@@ -1,0 +1,12 @@
+.pagina1background {
+    background-color: lightblue;
+    height: 100%; 
+    width: 100%;
+    text-align: center;
+    justify-content: center;    
+}
+.pagina1background img {
+    width: 30%;
+    height: 30%;
+}
+  
