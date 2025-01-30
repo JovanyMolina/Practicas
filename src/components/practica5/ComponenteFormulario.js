@@ -1,8 +1,20 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Input, Form, Row, Col, FormGroup, Label, Button } from "reactstrap";
-import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import {
+  Input,
+  Form,
+  Row,
+  Col,
+  FormGroup,
+  Label,
+  Button,
+  Modal,
+  FormFeedback,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+} from "reactstrap";
 
 export default function ComponenteFormulario(args) {
   //////////////
@@ -12,20 +24,21 @@ export default function ComponenteFormulario(args) {
   const [formEnviado, setFormEnviado] = useState(false);
 
   //////////
-
-  const [datosFormulario, setDatosFormularios] = useState({
-    nombre: "",
+  const defaultForm = {
+    name: "",
     apellidos: "",
     email: "",
     password: "",
-    edad: 0,
+    edad: 1,
     genero: false,
     rol: "",
     opcion1: false,
     opcion2: false,
     notas: "",
     fechaDeRegistro: "",
-  });
+  };
+
+  const [datosFormulario, setDatosFormularios] = useState(defaultForm);
 
   const cambio = (e) => {
     const { name, value, type, checked } = e.target;
@@ -35,53 +48,35 @@ export default function ComponenteFormulario(args) {
     });
   };
 
+  function ReiniciarFormulario() {
+    setDatosFormularios(defaultForm);
+    setFormEnviado(false);
+  }
+
   const elSumitForm = (e) => {
     e.preventDefault();
     console.log(datosFormulario);
     setFormEnviado(true);
 
-    /*
-    if(!datosFormulario.nombre || !datosFormulario.apellidos || !datosFormulario.email || !datosFormulario.password || !datosFormulario.edad || !datosFormulario.genero || !datosFormulario.rol ||  !datosFormulario.notas || !datosFormulario.fechaDeRegistro){
-      alert("Todos los campos son obligatorios");
-        return;
-    }*/
-
-   
 
   };
   useEffect(() => {
-    if (datosFormulario.nombre && 
-      datosFormulario.email && 
-      datosFormulario.password && 
-      datosFormulario.edad && 
-      datosFormulario.genero && 
-      datosFormulario.rol && 
-      datosFormulario.notas && 
-      datosFormulario.fechaDeRegistro) {
+    if (
+      datosFormulario.name &&
+      datosFormulario.email &&
+      datosFormulario.password &&
+      datosFormulario.edad &&
+      datosFormulario.genero &&
+      datosFormulario.rol &&
+      datosFormulario.notas &&
+      datosFormulario.fechaDeRegistro
+    ) {
       setBotonActivo(true);
     } else {
       setBotonActivo(false);
       setFormEnviado(false);
     }
-  }, [datosFormulario]); 
-
-  function ReiniciarFormulario() {
-    setDatosFormularios({
-      nombre: "",
-      apellidos: "",
-      email: "",
-      password: "",
-      edad: 0,
-      genero: false,
-      rol: "",
-      opcion1: false,
-      opcion2: false,
-      notas: "",
-      fechaDeRegistro: "",
-    });
-    setFormEnviado(false);
-  }
-
+  }, [datosFormulario]);
 
   return (
     <div>
@@ -94,10 +89,13 @@ export default function ComponenteFormulario(args) {
               <div>
                 {" "}
                 <Input
-                  name="nombre"
-                  value={datosFormulario.nombre}
+                  name="name"
+                  value={datosFormulario.name}
                   onChange={cambio}
+                  valid={datosFormulario.name.match(/^[a-zA-Z]+$/)}
+                  invalid={datosFormulario.name.match(/^[0-9!¡"#$%&¿?(){}=]+$/)}
                 />
+                <FormFeedback>Solo se permiten letras</FormFeedback>
               </div>
               <Label for="exampleName">Apeliidos</Label>
               <div>
@@ -106,17 +104,26 @@ export default function ComponenteFormulario(args) {
                   name="apellidos"
                   value={datosFormulario.apellidos}
                   onChange={cambio}
+                  valid={datosFormulario.apellidos.match(/^[a-zA-Z]+$/)}
+                  invalid={datosFormulario.apellidos.match(/^[0-9!¡"#$%&¿?(){}=]+$/)}
                 />
+                <FormFeedback>Solo se permiten letras</FormFeedback>
               </div>
               <Label for="exampleEmail">Email</Label>
               <Input
                 id="exampleEmail"
                 name="email"
-                placeholder="with a placeholder"
                 type="email"
                 onChange={cambio}
                 value={datosFormulario.email}
+                valid={datosFormulario.email.match(
+                  /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/
+                )}
+                invalid={datosFormulario.email != "" && !datosFormulario.email.match(
+                  /^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/
+                )}
               />
+              <FormFeedback>Debe tener formato de Correo Electronico</FormFeedback>
             </FormGroup>
           </Col>
           <Col md={6}>
@@ -128,7 +135,10 @@ export default function ComponenteFormulario(args) {
                 type="password"
                 onChange={cambio}
                 value={datosFormulario.password}
+
               />
+
+
               <FormGroup>
                 <Label for="exampleDatetime">edad</Label>
                 <Input
@@ -136,8 +146,18 @@ export default function ComponenteFormulario(args) {
                   placeholder="edad"
                   type="number"
                   onChange={cambio}
+                  defaultValue={1}
                   value={datosFormulario.edad}
+                  min="0"
+                  max="100"
+                  valid={datosFormulario.edad > 0 && datosFormulario.edad <= 100}
+
+                  invalid={
+                    datosFormulario.edad !== "" && (isNaN(datosFormulario.edad) || datosFormulario.edad <= 0 || datosFormulario.edad > 100)
+                  }
                 />
+                <FormFeedback>Solo acepta números positivos, hasta el número 100 (No letras ni simbolos)</FormFeedback>
+
               </FormGroup>
             </FormGroup>
           </Col>
@@ -192,7 +212,7 @@ export default function ComponenteFormulario(args) {
             name="opcion1"
             value="opcion 1"
             onChange={cambio}
-            checked={datosFormulario.opcion1  }
+            checked={datosFormulario.opcion1}
           />{" "}
           <Label check>opcion 1</Label>
         </FormGroup>
@@ -202,7 +222,7 @@ export default function ComponenteFormulario(args) {
             name="opcion2"
             value="opcion 2"
             onChange={cambio}
-            checked={datosFormulario.opcion2  }
+            checked={datosFormulario.opcion2}
           />{" "}
           <Label check>opcion 2</Label>
         </FormGroup>
@@ -229,26 +249,38 @@ export default function ComponenteFormulario(args) {
                 type="date"
                 onChange={cambio}
                 value={datosFormulario.fechaDeRegistro}
+                min={new Date().toISOString().split("T")[0]} 
+                valid={
+                  datosFormulario.fechaDeRegistro >= new Date().toISOString().split("T")[0]
+                }
+                invalid={
+                  datosFormulario.fechaDeRegistro !== "" &&
+                  datosFormulario.fechaDeRegistro < new Date().toISOString().split("T")[0]
+                }
               />
+              <FormFeedback>
+                La fecha debe ser igual o posterior al día de hoy.
+              </FormFeedback>
             </FormGroup>
           </Col>
         </Row>{" "}
-        
-        <Button type="submit" disabled={!botonActivo}>Enviar</Button> 
-        <Button onClick={toggle} disabled={!formEnviado} >Mostrar</Button>
-        <Button onClick={ReiniciarFormulario} >Reiniciar Formulario </Button> 
-        
-          
+        <Button type="submit" disabled={!botonActivo}>
+          Enviar
+        </Button>
+        <Button onClick={toggle} disabled={!formEnviado}>
+          Mostrar
+        </Button>
+        <Button onClick={ReiniciarFormulario}>Reiniciar Formulario </Button>
         <Modal isOpen={modal} toggle={toggle} {...args}>
           <ModalHeader toggle={toggle}>Registro con el useState</ModalHeader>
           <ModalBody>
-            <p>Nombre: {datosFormulario.nombre}</p>
+            <p>Nombre: {datosFormulario.name}</p>
             <p>Apellidos: {datosFormulario.apellidos}</p>
             <p>Edad: {datosFormulario.edad}</p>
             <p>Email: {datosFormulario.email}</p>
             <p>Contraseña: {datosFormulario.password}</p>
             <p>Genero: {datosFormulario.genero}</p>
-            <p>opcion1: {datosFormulario.opcion1 ? "true" : "false" }</p>
+            <p>opcion1: {datosFormulario.opcion1 ? "true" : "false"}</p>
             <p>opcion2: {datosFormulario.opcion2 ? "true" : "false"}</p>
             <p>Rol: {datosFormulario.rol}</p>
             <p>Notas: {datosFormulario.notas}</p>
@@ -258,7 +290,7 @@ export default function ComponenteFormulario(args) {
             <Button color="primary" onClick={toggle}>
               Aceptar
             </Button>{" "}
-            <Button color="secondary"  onClick={toggle}>
+            <Button color="secondary" onClick={toggle}>
               Cancelar
             </Button>
           </ModalFooter>
