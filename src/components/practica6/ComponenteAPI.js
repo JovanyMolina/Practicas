@@ -1,20 +1,32 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Card, CardBody, CardTitle, CardSubtitle, CardText, CardHeader, CardFooter } from "reactstrap";
+import { Button, Card, CardBody,CardHeader, CardFooter, Table } from "reactstrap";
 
 export default function ComponenteAPI() {
 
-  const [data, setData] = useState(null)
+  const [data, setDataUser] = useState(null)
+  const [dataBeers, setDataBeers] = useState(null)
+
+  useEffect(() => {
+    getAPIBeers();
+  }, [ ])
 
 
-  function GetAPI() {
-    fetch('https://random-data-api.com/api/v2/users?size=1&response_type=json')
+
+  function getAPIBeers() {
+    fetch('https://random-data-api.com/api/v2/beers?size=15&response_type=json')
       .then(response => response.json())
-      .then(data => setData(data))
+      .then(dataBeers => setDataBeers(dataBeers))
       .catch(error => console.log(error))
   }
 
+  function getAPIUsuarios() {
+    fetch('https://random-data-api.com/api/v2/users?size=1&response_type=json')
+      .then(response => response.json())
+      .then(data => setDataUser(data))
+      .catch(error => console.log(error))
+  }
 
   function ViewCard() {
     if (!data) {
@@ -82,11 +94,83 @@ export default function ComponenteAPI() {
 
   return (
     <div>
-      <Button onClick={GetAPI}>Obtener datos</Button>
+      <Button onClick={getAPIUsuarios}>Obtener datos de USUARIOS</Button>
       {ViewCard()}
-      <Button onClick={GetAPI}>Obtener datos</Button>
+      <br/>
+      <br />
+      <hr/>
+      <br />
+      <br />
 
 
+      <Table
+        bordered
+        borderless
+        hover
+        responsive
+        striped
+      >
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              id
+            </th>
+            <th>
+              uid
+            </th>
+            <th>
+              Marca
+            </th>
+            <th>
+              Nombre
+            </th>
+            <th>
+              Estilo
+            </th>
+            <th>
+              hop
+            </th>
+            <th>
+              yeast
+            </th>
+            <th>
+              malts
+            </th>
+            <th>
+              ibu
+            </th>
+            <th>
+              alcohol
+            </th>
+            <th>
+              blg
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {dataBeers && dataBeers.map((beer, index) => {
+            return (
+              <tr key={index}>
+                <th >{index + 1}</th>
+                <td>{beer.id}</td>
+                <td>{beer.uid}</td>
+                <td>{beer.brand}</td>
+                <td>{beer.name}</td>
+                <td>{beer.style}</td>
+                <td>{beer.hop}</td>
+                <td>{beer.yeast}</td>
+                <td>{beer.malts}</td>
+                <td>{beer.ibu}</td>
+                <td>{beer.alcohol}</td>
+                <td>{beer.blg}</td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </Table>
     </div>
   )
 }
