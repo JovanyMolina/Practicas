@@ -59,6 +59,11 @@ export default function ComponenteFormulario(args) {
     fechaDeRegistro: "",
   };
 
+  const selectOptions = ["desarrollador", "proyect manager","CEO" ,"tester","Practicante"]
+
+
+
+
   const [datosFormulario, setDatosFormularios] = useState(defaultForm);
 
   const cambio = (e) => {
@@ -244,12 +249,11 @@ export default function ComponenteFormulario(args) {
                   type="select"
 
                 >
-
-                  <option></option>
-                  <option>Admin</option>
-                  <option>Operador</option>
-                  <option>Caja</option>
-                  <option>Supervisor</option>
+                  {selectOptions.map((option, index) => (
+                    <option key={index}>{option}</option>
+                    
+                  ))}
+                  
                 </Input>
               </FormGroup>
             </FormGroup>
