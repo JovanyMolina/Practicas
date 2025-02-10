@@ -33,7 +33,7 @@ export default function ComponenteFormulario(args) {
   const toggle = () => setModal(!modal);
   const [modalEdit, setModalEdit] = useState(false);
   const toggleEdit = () => setModalEdit(!modalEdit);
-  
+
   const [botonActivo, setBotonActivo] = useState(false);
   const [buttonEditActive, setButtonEditActive] = useState(false);
 
@@ -59,7 +59,7 @@ export default function ComponenteFormulario(args) {
     fechaDeRegistro: "",
   };
 
-  const selectOptions = ["desarrollador", "proyect manager","CEO" ,"tester","Practicante"]
+  const selectOptions = ["desarrollador", "proyect manager", "CEO", "tester", "Practicante"]
 
 
 
@@ -109,14 +109,14 @@ export default function ComponenteFormulario(args) {
   const guardarDatos = () => {
     // setRegistros([...registerData, datosFormulario]);
 
-    if (editIndex !== null ) {
+    if (editIndex !== null) {
 
       const nuevosRegistros = [...registerData];
       nuevosRegistros[editIndex] = datosFormulario;
       setRegisterData(nuevosRegistros);
       setModalEdit(false);
-    } else if(
-      datosFormulario.name === "" || 
+    } else if (
+      datosFormulario.name === "" ||
       datosFormulario.apellidos === "" ||
       datosFormulario.email === "" ||
       datosFormulario.password === "" ||
@@ -124,12 +124,12 @@ export default function ComponenteFormulario(args) {
       datosFormulario.genero === "" ||
       datosFormulario.rol === "" ||
       datosFormulario.notas === "" ||
-      datosFormulario.fechaDeRegistro === "" 
-      
+      datosFormulario.fechaDeRegistro === ""
+
     ) {
       alert("Debe llenar todos los campos");
     }
-    else{
+    else {
       setRegisterData([...registerData, datosFormulario]);
 
     }
@@ -151,7 +151,7 @@ export default function ComponenteFormulario(args) {
   const cancelarEdicion = () => {
     ReiniciarFormulario();
     setModalEdit(false);
-    }
+  }
 
   /////////////////////////////
   return (
@@ -235,6 +235,8 @@ export default function ComponenteFormulario(args) {
                 id="examplePassword"
                 name="password"
                 type="password"
+                min={6}
+                max={15}
                 onChange={cambio}
                 value={datosFormulario.password}
               />
@@ -251,9 +253,9 @@ export default function ComponenteFormulario(args) {
                 >
                   {selectOptions.map((option, index) => (
                     <option key={index}>{option}</option>
-                    
+
                   ))}
-                  
+
                 </Input>
               </FormGroup>
             </FormGroup>

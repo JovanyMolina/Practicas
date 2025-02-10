@@ -10,7 +10,7 @@ export default function Home() {
       <Link href='/practica4' className="botonesInicio">PRACTICA#4</Link>
       <Link href='/practica5' className="botonesInicio">PRACTICA#5</Link>
       <Link href='/practica6' className="botonesInicio">PRACTICA#6</Link>
-      
+      <Link href='/practica7' className="botonesInicio">PRACTICA#7</Link>
     </div>
   );
 }
