@@ -1,6 +1,10 @@
 import React from 'react'
 
 export default function page() {
+  
+
+
+
   return (
     <div>
       <a>Comando para correr el server.js practica 7</a><br />
@@ -9,6 +13,8 @@ export default function page() {
       <a>node server.js</a><br />
       <br />
      
+
+
      
     </div>
   )
