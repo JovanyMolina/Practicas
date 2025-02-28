@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function Home() {
   return (
     <div className="ContenedorInicio">
@@ -11,6 +12,9 @@ export default function Home() {
       <Link href='/practica5' className="botonesInicio">PRACTICA#5</Link>
       <Link href='/practica6' className="botonesInicio">PRACTICA#6</Link>
       <Link href='/practica7' className="botonesInicio">PRACTICA#7</Link>
+      <Link href='/practica8Todo' className="botonesInicio">PRACTICA#8</Link>
+    
+
     </div>
   );
 }

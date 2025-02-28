@@ -1,0 +1,499 @@
+[
+  {
+    "Name": "Carlos",
+    "LastName": "",
+    "Email": "vabrequosezei-2743@yopmail.com",
+    "Gender": "Masculino",
+    "Birthdate": "2007-02-05",
+    "Tel": "5264032473",
+    "Foto": "img_b18befbe-3da5-4f68-9806-6f55bc7aa8c1",
+    "InstitutoProcedencia": "TEC. MORELIA",
+    "Carrera": "Ingeniería en Informática",
+    "LenguajesDeProgramacion": [
+      "PHP",
+      "HTML+CSS",
+      "JavaScripts"
+    ],
+    "Notas": "RESIDENTE",
+    "id": 1
+  },
+  {
+    "Name": "Roberto",
+    "LastName": "Martinez",
+    "Email": "refraureufriroi-1509@yopmail.com",
+    "Gender": "Masculino",
+    "Birthdate": "1995-01-29",
+    "Tel": "8522819475",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "Tec. toluca",
+    "Carrera": "Ingeniería en Informática",
+    "LenguajesDeProgramacion": [
+      "Python",
+      "C++",
+      "C#"
+    ],
+    "Notas": "Egresado",
+    "id": 2
+  },
+  {
+    "Name": "Susy",
+    "LastName": "Martinez Mercado",
+    "Email": "trutreujavauvu-5106@yopmail.com",
+    "Gender": "Femenino",
+    "Birthdate": "1995-07-05",
+    "Tel": "6489727145",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "Tec. morleia",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [
+      "JavaScripts"
+    ],
+    "Notas": "Residente",
+    "id": 3
+  },
+  {
+    "Name": "Lupita ",
+    "LastName": "Serrato",
+    "Email": "jifawiprauha-1937@yopmail.com",
+    "Gender": "Femenino",
+    "Birthdate": "1994-02-06",
+    "Tel": "2014739396",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "Tec. sur guanajuato",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [
+      "C#",
+      "PHP",
+      "C++",
+      "TypeScript",
+      "HTML+CSS",
+      "JavaScripts"
+    ],
+    "Notas": "Egressada",
+    "id": 4
+  },
+  {
+    "Name": "Roberto",
+    "LastName": "Garcia",
+    "Email": "CesarGarcia19@gmail.com",
+    "Gender": "Masculino",
+    "Birthdate": "1999-08-28",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "Instituto Tecnologico del sur de Guanajuato",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "Notas": "Estudiante de 10vo semestre",
+    "id": 5
+  },
+  {
+    "Name": "PRUBA",
+    "LastName": "Mercado",
+    "Email": "SusyMerca09@gmail.com",
+    "Gender": "Femenino",
+    "Birthdate": "1999-08-28",
+    "Tel": "0987654321",
+    "Foto": "SSS",
+    "InstitutoProcedencia": "ITSUR",
+    "Carrera": "Ingenieria en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [
+      "HTML+CSS",
+      "PHP",
+      "C#"
+    ],
+    "Notas": "Estudiante de 12vo semestre",
+    "id": 6
+  },
+  {
+    "Name": "Daniela",
+    "LastName": "L M",
+    "Email": "DaniLM@gmas.com",
+    "Gender": "Femenino",
+    "Birthdate": "1989-01-28",
+    "Tel": "",
+    "Foto": "img_subtã­tulo-(14).png",
+    "InstitutoProcedencia": "ITSUR",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScripts",
+      "Python"
+    ],
+    "Notas": "Rsidente",
+    "id": 8
+  },
+  {
+    "Name": "prueba",
+    "LastName": "prueba prueba",
+    "Email": "prueba@gass.ccs",
+    "Gender": "Masculino",
+    "Birthdate": "2011-01-29",
+    "Tel": "1234567890",
+    "Foto": "img_d8ded72d-ef31-4cda-a51b-4f234fc83cc9.png",
+    "InstitutoProcedencia": "pruebaprueba prueba",
+    "Carrera": "Ingeniería en Informática",
+    "LenguajesDeProgramacion": [
+      "JavaScripts",
+      "HTML+CSS",
+      "PHP",
+      "C#"
+    ],
+    "Notas": "prueba",
+    "id": 9
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScripts",
+      "Python",
+      "C++",
+      "JavaScripts",
+      "PHP"
+    ],
+    "Notas": "asasas",
+    "id": 10
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScripts",
+      "Python",
+      "C++",
+      "JavaScripts",
+      "PHP"
+    ],
+    "Notas": "asasas",
+    "id": 11
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScript"
+    ],
+    "Notas": "asasas",
+    "id": 12
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "HTML+CSS",
+      "JavaScript"
+    ],
+    "Notas": "asasas",
+    "id": 13
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "HTML+CSS"
+    ],
+    "Notas": "asasas",
+    "id": 14
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "HTML+CSS"
+    ],
+    "Notas": "asasas",
+    "id": 15
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "HTML+CSS",
+      "C#"
+    ],
+    "Notas": "asasas",
+    "id": 16
+  },
+  {
+    "Name": "",
+    "LastName": "",
+    "Email": "",
+    "Gender": "",
+    "Birthdate": "",
+    "Tel": "",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [],
+    "Notas": "",
+    "id": 17
+  },
+  {
+    "Name": "",
+    "LastName": "",
+    "Email": "",
+    "Gender": "",
+    "Birthdate": "",
+    "Tel": "",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [],
+    "Notas": "",
+    "id": 18
+  },
+  {
+    "Name": "",
+    "LastName": "",
+    "Email": "",
+    "Gender": "",
+    "Birthdate": "",
+    "Tel": "",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [],
+    "Notas": "",
+    "id": 19
+  },
+  {
+    "Name": "",
+    "LastName": "",
+    "Email": "",
+    "Gender": "",
+    "Birthdate": "",
+    "Tel": "",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [],
+    "Notas": "",
+    "id": 20
+  },
+  {
+    "Name": "",
+    "LastName": "",
+    "Email": "",
+    "Gender": "",
+    "Birthdate": "",
+    "Tel": "",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [],
+    "Notas": "",
+    "id": 21
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "HTML+CSS",
+      "PHP"
+    ],
+    "Notas": "asasas",
+    "id": 22
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "HTML+CSS",
+      "Python",
+      "C++"
+    ],
+    "Notas": "asasas",
+    "id": 23
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "PHP",
+      "Python"
+    ],
+    "Notas": "asasas",
+    "id": 24
+  },
+  {
+    "Name": "Juan Jose",
+    "LastName": "Arreola Gonzales",
+    "Email": "juanjoAG@gmial.com",
+    "Gender": "Masculino",
+    "Birthdate": "2001-01-29",
+    "Tel": "1234567896",
+    "Foto": "img_a-young-man-sitting-at-a-desk-at-night--studying-w.jpg",
+    "InstitutoProcedencia": "ITSUR",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [
+      "HTML+CSS",
+      "PHP",
+      "Python"
+    ],
+    "Notas": "residente",
+    "id": 25
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Femenino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "PHP",
+      "HTML+CSS"
+    ],
+    "Notas": "asasas",
+    "id": 26
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "PHP",
+      "C++"
+    ],
+    "Notas": "asasas",
+    "id": 27
+  },
+  {
+    "Name": "Cesar",
+    "LastName": "Garcia",
+    "Email": "CesarGarcia19@gmail.com",
+    "Gender": "Masculino",
+    "Birthdate": "1999-08-28",
+    "Tel": "1234567890",
+    "Foto": "Sin Foto",
+    "InstitutoProcedencia": "Instituto Tecnologico del sur de Guanajuato",
+    "Carrera": "Ingeniería en Sistemas Computacionales",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "Notas": "Estudiante de 10vo semestre",
+    "id": 28
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "img_subtã­tulo-(9).png",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "HTML+CSS",
+      "Python"
+    ],
+    "Notas": "asasas",
+    "id": 29
+  },
+  {
+    "Name": "asasas",
+    "LastName": "asasas asa",
+    "Email": "asasas@sadsd.co",
+    "Gender": "Masculino",
+    "Birthdate": "2006-02-04",
+    "Tel": "1234567890",
+    "Foto": "img_prueba.png",
+    "InstitutoProcedencia": "asas asas",
+    "Carrera": "Ingeniería en Tecnologías de la Información",
+    "LenguajesDeProgramacion": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "Notas": "asasas",
+    "id": 30
+  }
+]
